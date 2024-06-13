@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.forEach()</h2>
+<p>Calls a function once for each array element.</p>
+
+<p id="demo">
+</p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25,100];
+
+let txt = "<table border=1 width=100%><tr>";
+numbers.forEach(myFunction);
+txt = txt + "</tr></table>";
+
+
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt = txt + "<td>"+ value + "</td>"; 
+}
+</script>
+
+</body>
+</html>
